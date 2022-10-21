@@ -13,7 +13,7 @@ index.use(express.urlencoded({ extended: false }));
 index.use(express.static(path.join(__dirname, 'public')));
 index.use(cookieParser());
 
-app.get('/', (req, res) => {
+index.get('/', (req, res) => {
     return res.status(200).json({
         status: true,
         message: 'challenge chapter 6'
