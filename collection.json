@@ -1,0 +1,677 @@
+{
+  "item": [
+    {
+      "id": "ef1c9ae1-64e4-4a3c-b036-9ccbeb61b550",
+      "name": "request register user",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "auth",
+            "daftar"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "cache-control",
+            "value": "no-cache"
+          }
+        ],
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"username\":\"julian\",\"email\":\"julian@gmail.com\",\"password\":\"123julian\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "63de94e1-7a6c-4255-91f1-16681f571c61",
+      "name": "request mendapatkan seluruh daftar user",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "auth",
+            "user"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "cache-control",
+            "value": "no-cache"
+          }
+        ],
+        "method": "GET"
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "1fdd92d2-d509-4214-a450-5a4317670622",
+      "name": "request menghapus user berdasarkan id",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "auth",
+            "hapus",
+            ":id"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "type": "any",
+              "key": "id"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "cache-control",
+            "value": "no-cache"
+          }
+        ],
+        "method": "DELETE"
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "ca254d83-f471-4b09-bcdf-2fe2adbba656",
+      "name": "request login user",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "auth",
+            "masuk"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "cache-control",
+            "value": "no-cache"
+          }
+        ],
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"email\":\"julian@gmail.com\",\"password\":\"123julian\"}"
+        }
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "b0b0e3ad-a27c-400e-9f77-ff1d3aeb7277",
+      "name": "request autentifikasi akun user",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "auth",
+            "akun"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "cache-control",
+            "value": "no-cache"
+          }
+        ],
+        "method": "GET",
+        "auth": {}
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "fa231b29-5874-4949-9b9e-b3c6155b1dcc",
+      "name": "request ganti password",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "auth",
+            "ganti-password"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "cache-control",
+            "value": "no-cache"
+          }
+        ],
+        "method": "PATCH",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"passwordLama\":\"123julian\",\"passwordBaru\":\"julian123\",\"passwordBaru2\":\"julian123\"}"
+        },
+        "auth": {}
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "262eb01d-faa3-4836-ac26-20c4410a5fd5",
+      "name": "request mendapatkan user dengan id",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "auth",
+            "detil",
+            ":id"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "type": "any",
+              "key": "id"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "cache-control",
+            "value": "no-cache"
+          }
+        ],
+        "method": "GET"
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "edc3169a-4225-4b2b-9c11-18d692a3ebf6",
+      "name": "request isi biodata user",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "auth",
+            "akun",
+            "isibiodata"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "cache-control",
+            "value": "no-cache"
+          }
+        ],
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"umur\":29,\"kota\":\"Jakarta\",\"nomor_telepon\":\"081234556678\",\"jenis_kelamin\":\"laki-laki\"}"
+        },
+        "auth": {}
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "b934ce0c-009b-4068-9960-fa43844e3a50",
+      "name": "request hapus biodata user",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "auth",
+            "akun",
+            "hapusBiodata"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "cache-control",
+            "value": "no-cache"
+          }
+        ],
+        "method": "DELETE",
+        "auth": {}
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "75054db5-c94e-498e-a745-d01d1dc1b0a9",
+      "name": "request menampilkan biodata user",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "auth",
+            "akun",
+            "tampilBiodata"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "cache-control",
+            "value": "no-cache"
+          }
+        ],
+        "method": "GET",
+        "auth": {}
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "8b8b5005-c5d5-4ef4-b3d2-6fa01f6a30fd",
+      "name": "request menampilkan seluruh biodata user",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "auth",
+            "tampilBiodataAll"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "cache-control",
+            "value": "no-cache"
+          }
+        ],
+        "method": "GET"
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "b329d69c-d44d-4690-91e3-203b32be281d",
+      "name": "request update biodata user",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "auth",
+            "akun",
+            "ganti-biodata"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "cache-control",
+            "value": "no-cache"
+          }
+        ],
+        "method": "PATCH",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"nama\":\"andri\",\"umur\":19,\"kota\":\"medan\",\"nomor_telepon\":\"0800995432222\",\"jenis_kelamin\":\"laki-laki\"}"
+        },
+        "auth": {}
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "722fe8b0-3130-41c4-82a3-8cb41288ea44",
+      "name": "request isi histori game user",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "auth",
+            "akun",
+            "isiGame"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "cache-control",
+            "value": "no-cache"
+          }
+        ],
+        "method": "POST",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"nama_game\":\"left 4 dead 2\",\"nilai\":100}"
+        },
+        "auth": {}
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "03d5a82c-c1a9-49d9-b482-c7b346b0f951",
+      "name": "request menampilkan histori game user",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "auth",
+            "akun",
+            "tampilGameSaya"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "cache-control",
+            "value": "no-cache"
+          }
+        ],
+        "method": "GET",
+        "auth": {}
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "bfa72b56-6b68-45f8-969d-0e52a80662aa",
+      "name": "request update histori game user berdasarkam id game",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "auth",
+            "akun",
+            "ganti-game",
+            ":id"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "type": "any",
+              "key": "id"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "cache-control",
+            "value": "no-cache"
+          }
+        ],
+        "method": "PATCH",
+        "body": {
+          "mode": "raw",
+          "raw": "{\"nama_game\":\"mario kart\",\"nilai\":76}"
+        },
+        "auth": {}
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "4feabb31-6e46-4da5-b956-bc5feacb903e",
+      "name": "request hapus histori game user berdasarkam id game",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "auth",
+            "akun",
+            "hapusGame",
+            ":id"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": [
+            {
+              "type": "any",
+              "key": "id"
+            }
+          ]
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "cache-control",
+            "value": "no-cache"
+          }
+        ],
+        "method": "DELETE",
+        "auth": {}
+      },
+      "response": [],
+      "event": []
+    },
+    {
+      "id": "dd37bb7a-c4ca-4799-9d0a-cd18a712e43c",
+      "name": "request menampilkan seluruh game user",
+      "request": {
+        "url": {
+          "protocol": "http",
+          "port": "3000",
+          "path": [
+            "auth",
+            "tampilSeluruhGame"
+          ],
+          "host": [
+            "localhost"
+          ],
+          "query": [],
+          "variable": []
+        },
+        "header": [
+          {
+            "key": "Authorization",
+            "value": ""
+          },
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "cache-control",
+            "value": "no-cache"
+          }
+        ],
+        "method": "GET"
+      },
+      "response": [],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [],
+  "info": {
+    "_postman_id": "ecec1b2c-4f0b-41c6-b7ef-ec390e4f07bd",
+    "name": "Dokumentasi Api Challenge Chapter 5 - Achmad Fadilla",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  }
+}
