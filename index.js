@@ -1,6 +1,6 @@
 const express = require('express');
 const morgan = require('morgan');
-const router = require('./routes');
+const router = require('./routes/index');
 require('dotenv').config();
 const index = express();
 const path = require('path');
