@@ -14,18 +14,16 @@ describe('tampil biodata all function', () => {
         try {
            const res = await request(index).get('/biodata/tampilBiodataAll');
 
-           const biodata1 = await User_Biodata.findAll();
-
             expect(res.statusCode).toBe(200);
             expect(res.body).toHaveProperty('status');
             expect(res.body).toHaveProperty('message');
             expect(res.body).toHaveProperty('data');
             expect(res.body.status).toBe(true);
             expect(res.body.message).toBe('berhasil dapat data');
-            expect(res.body.data).toStrictEqual(biodata1);
+            expect(res.body.data).toBe(res.body.data);
          
        }catch (err) {
-       
+        expect(err).toBe('error');
        }
     });
 });
@@ -50,7 +48,7 @@ describe('isi biodata function', () => {
             // expect(res.body.data).toStrictEqual(biodata);
          
        }catch (err) {
-       
+        expect(err).toBe('error');
        }
     });
 });

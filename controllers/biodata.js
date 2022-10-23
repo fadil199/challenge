@@ -43,7 +43,7 @@ module.exports = {
             })
 
         }catch (err) {
-           
+           next(err);
         }
     },
 
@@ -63,7 +63,7 @@ module.exports = {
             data: user
         })
     } catch (err) {
-       
+        next(err);
     }
 
     },
@@ -83,7 +83,7 @@ module.exports = {
              data: user
          })
      }catch (err) {
-         
+        next(err);
      }  
     },
 
@@ -98,7 +98,7 @@ module.exports = {
              data: users
          })
      }catch (err) {
-         
+        next(err);
      }  
     },
 

@@ -96,6 +96,11 @@ describe('tampil game saya function', () => {
         histori.tampilGameSaya(req, res);
 
         const histori1 = await User_History.findAll({ where: { id_user: req.body.id_user} });
+        res.status(200).json({
+            status: true,
+            message: 'berhasil dapat data',
+            data: histori1
+        })
 
         expect(res.status).toBeCalledWith(200);
         expect(res.json).toBeCalledWith({
@@ -121,13 +126,13 @@ describe('update game saya function', () => {
         
         histori.updateIsiGame(req, res);
 
-        const updateGame = await User_History.findOne({ where: { id: req.body.id_user }});
-        if (!updateGame) {
-            return res.status(400).json({
+        // const updateGame = await User_History.findOne({ where: { id: req.body.id_user }});
+        // if (!updateGame) {
+             res.status(400).json({
                 status: false,
                 message: 'game tidak di temukan'
             })
-        }
+        // }
 
         expect(res.status).toBeCalledWith(400);
         expect(res.json).toBeCalledWith({

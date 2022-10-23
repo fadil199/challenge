@@ -31,7 +31,7 @@ module.exports = {
             })
 
         }catch (err) {
-            
+           
         }
     },
 
@@ -49,7 +49,7 @@ module.exports = {
              data: user
          })
      }catch (err) {
-         
+        
      }  
     },
 
@@ -107,16 +107,13 @@ module.exports = {
         try { 
             const users = await User_History.findAll();
     
-        
- 
- 
-         return res.status(200).json({
+          res.status(200).json({
              status: true,
              message: 'berhasil dapat data',
              data: users
          })
      }catch (err) {
-         
+        
      }  
     }
 }
