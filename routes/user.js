@@ -3,7 +3,6 @@ const router = express.Router();
 const cont = require('../controllers');
 const middle = require('../helpers/middle');
 
-router.get('/index', cont.user.index);
 router.post('/daftar', cont.user.daftar);
 router.post('/masuk', cont.user.masuk);
 router.get('/akun', middle.masukDulu, cont.user.akunSaya);
